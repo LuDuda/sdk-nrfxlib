@@ -132,3 +132,8 @@ target_link_libraries(nrf-802154-driver
     nrf-802154-sl
     nrf-802154-common
 )
+
+target_compile_options(nrf-802154-driver
+  PRIVATE
+    "-fno-lto"
+)
